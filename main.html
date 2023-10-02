@@ -25,7 +25,12 @@ function secondHighest(arr) {
       secondMax = arr[i];
     }
   }
-	return secondMax;	
+  if (secondMax === -Infinity) {
+    console.log("There is no second highest element.");
+  } else {
+		return secondMax;	
+  }
+
 }
 
 		function Main() {
